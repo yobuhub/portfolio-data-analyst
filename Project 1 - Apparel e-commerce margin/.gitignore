@@ -1,0 +1,4 @@
+data/raw/
+data/source/
+__pycache__/
+*.pbix.bak

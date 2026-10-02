@@ -1,0 +1,39 @@
+campaign_id,campaign_name,channel_id,objective,start_date,end_date,target_market
+CMP-01,PS-Brand,2,brand,2022-03-01,2024-02-29,ALL
+CMP-02,PS-NonBrand-Apparel,2,acquisition,2022-03-01,2024-02-29,ALL
+CMP-03,PS-Shopping-Catalog,2,acquisition,2022-03-01,2024-02-29,ALL
+CMP-04,PS-UK-NonBrand,2,acquisition,2022-03-01,2024-02-29,GB
+CMP-05,PS-BlackFriday-Push,2,seasonal,2023-11-13,2023-11-30,ALL
+CMP-06,PS-WinterSale,2,seasonal,2024-01-02,2024-01-31,ALL
+CMP-07,SOC-Prospecting,4,acquisition,2022-03-01,2024-02-29,ALL
+CMP-08,SOC-Retargeting,4,retargeting,2022-03-01,2024-02-29,ALL
+CMP-09,SOC-DACH-Prospecting,4,acquisition,2022-03-01,2024-02-29,DE
+CMP-10,SOC-BF-Teaser,4,seasonal,2023-11-16,2023-11-27,ALL
+CMP-11,SOC-NewYear-Reels,4,seasonal,2023-12-26,2024-01-15,ALL
+CMP-12,EML-Newsletter-Weekly,5,retention,2022-03-01,2024-02-29,ALL
+CMP-13,EML-Welcome-Series,5,onboarding,2022-03-01,2024-02-29,ALL
+CMP-14,EML-BF-EarlyAccess,5,seasonal,2023-11-20,2023-11-27,ALL
+CMP-15,EML-WinterSale,5,seasonal,2024-01-02,2024-01-15,ALL
+CMP-16,AFF-AlwaysOn,6,acquisition,2022-03-01,2024-02-29,ALL
+CMP-17,AFF-Holiday-Gifting,6,seasonal,2023-11-20,2023-12-24,ALL
+CMP-18,PS-BlackFriday-Push 2022-23,2,seasonal,2022-11-14,2022-12-01,ALL
+CMP-19,PS-WinterSale 2022-23,2,seasonal,2023-01-03,2023-02-01,ALL
+CMP-20,SOC-BF-Teaser 2022-23,4,seasonal,2022-11-17,2022-11-28,ALL
+CMP-21,SOC-NewYear-Reels 2022-23,4,seasonal,2022-12-27,2023-01-16,ALL
+CMP-22,EML-BF-EarlyAccess 2022-23,5,seasonal,2022-11-21,2022-11-28,ALL
+CMP-23,EML-WinterSale 2022-23,5,seasonal,2023-01-03,2023-01-16,ALL
+CMP-24,AFF-Holiday-Gifting 2022-23,6,seasonal,2022-11-21,2022-12-25,ALL
+CMP-25,PS-SpringSale 2023,2,seasonal,2023-04-03,2023-04-17,ALL
+CMP-26,PS-SpringSale 2022,2,seasonal,2022-04-04,2022-04-18,ALL
+CMP-27,EML-SpringSale 2023,5,seasonal,2023-04-06,2023-04-17,ALL
+CMP-28,EML-SpringSale 2022,5,seasonal,2022-04-07,2022-04-18,ALL
+CMP-29,PS-SummerSale 2023,2,seasonal,2023-06-26,2023-07-16,ALL
+CMP-30,PS-SummerSale 2022,2,seasonal,2022-06-27,2022-07-17,ALL
+CMP-31,SOC-Summer-Reels 2023,4,seasonal,2023-06-26,2023-07-16,ALL
+CMP-32,SOC-Summer-Reels 2022,4,seasonal,2022-06-27,2022-07-17,ALL
+CMP-33,EML-SummerSale 2023,5,seasonal,2023-06-30,2023-07-16,ALL
+CMP-34,EML-SummerSale 2022,5,seasonal,2022-07-01,2022-07-17,ALL
+CMP-35,SOC-BackToSchool 2023,4,seasonal,2023-08-21,2023-09-10,ALL
+CMP-36,SOC-BackToSchool 2022,4,seasonal,2022-08-22,2022-09-11,ALL
+CMP-37,EML-BackToSchool 2023,5,seasonal,2023-08-28,2023-09-10,ALL
+CMP-38,EML-BackToSchool 2022,5,seasonal,2022-08-29,2022-09-11,ALL

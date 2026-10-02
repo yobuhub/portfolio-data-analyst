@@ -1,0 +1,8 @@
+channel_id,channel_name,channel_group,is_paid
+1,organic_search,organic,0
+2,paid_search,paid,1
+3,direct,direct,0
+4,social,paid,1
+5,email,owned,0
+6,affiliate,paid,1
+7,referral,organic,0

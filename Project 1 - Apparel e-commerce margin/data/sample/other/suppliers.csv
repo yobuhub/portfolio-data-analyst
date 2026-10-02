@@ -1,0 +1,13 @@
+supplier_id,supplier_name,country,payment_terms_days,standard_lead_time_days
+SUP-01,Northloom Textiles,PL,30,7
+SUP-02,Tidewater Apparel Co.,PT,45,10
+SUP-03,Brightstitch Manufacturing,TR,60,14
+SUP-04,Cobalt Leatherworks,IT,30,14
+SUP-05,Alder & Finch Mills,CN,60,18
+SUP-06,Marlowe Footwear Group,VN,45,21
+SUP-07,Kestrel Accessories,IN,60,21
+SUP-08,Harborline Garments,BD,60,25
+SUP-09,Quillon Knitwear,RO,30,28
+SUP-10,Verdant Threadworks,ES,45,30
+SUP-11,Silverbrook Denim,PK,60,35
+SUP-12,Ashdown Trims & Bags,LT,30,12
