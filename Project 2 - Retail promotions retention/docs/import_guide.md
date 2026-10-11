@@ -22,6 +22,7 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 > TODO: how to setup a docker container
 
 #
+<br>
 
 ## Step 1 | Download the source data
 
@@ -31,7 +32,6 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 4. Check that you have all the constituent CSV files, i.e.: campaign_desc, campaign_table, causal_data, coupon_redempt, coupon, hh_demographic, product, and transaction_data.
 
 ⚠️ Remember **not** to commit the source files or samples (and other reformatted files) to a public repository.
-
 <br>
 
 ## Step 2 | Prepare the folder structure
@@ -39,7 +39,6 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 - Keep the raw files in a dedicated local folder.
 - Do not rename or edit the original files.
 - Make sure the folder is listed in `.gitignore`, as to ensure it does not get uploaded to a public repo.
-
 <br>
 
 ## Step 3 | Check the files before loading
@@ -50,7 +49,6 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 | **Field separator** | this parameter must match what is set in the csv file |
 | **Line endings (CRLF or LF)** | a wrong setting will break the upload |
 | **Row count** | checked for reference to ensure successful upload of data |
-
 <br>
 
 ## Step 4 | Make the files visible to SQL Server Management Studio
@@ -60,7 +58,6 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 - Check that the SQL Server process has permission to read them.
 
 >TODO: add exact commands once the scripts are ready
-
 <br>
 
 ## Step 5 | Create the database and load the data
@@ -70,7 +67,6 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 3. **Load data** - one load per each table.
 
 >TODO: link to the SQL scripts. Import through wizard as other possibility.
-
 <br>
 
 ## Step 6 | Validate the load
@@ -78,14 +74,12 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 - [ ] Make sure that the row counts match those in source CSV files.
 - [ ] Preview a few rows from each table.
 - [ ] Make sure the data is displayed in correct columns.
-
 <br>
 
 ## Step 7 | Next steps
 
 - Data cleaning and profiling
-- Table and field definitions: [data dictionary](docs/data_dictionary.md)
-
+- Table and field definitions: [Data dictionary](data_dictionary.md)
 <br>
 
 ## Troubleshooting
