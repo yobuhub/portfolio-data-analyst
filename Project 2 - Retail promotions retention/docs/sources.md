@@ -31,3 +31,5 @@
 - **Demographics** - information available for only part of the sample.
 - **Causality** - associations between promotions and repeat purchases do not, by themselves, demonstrate a causal effect.
 - **Time horizon** - data for a limited time period (i.e. ca. 2 years).
+
+*To be updated*
