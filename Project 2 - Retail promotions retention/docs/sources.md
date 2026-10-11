@@ -1,6 +1,6 @@
 # :link: Data sources
 
-### dunnhumby - The Complete Journey dataset
+## dunnhumby - The Complete Journey dataset
 
 - **Provider** - dunnhumby
 - **Dataset** - The Complete Journey
