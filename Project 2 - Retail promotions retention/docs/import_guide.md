@@ -18,8 +18,44 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 - [ ] Python + Jupyter (for easier presentation of findings and intermediary visualizations)
 - [ ] Free disk space for the CSV files
 
-> TODO: other environments to be described later (e.g. MySQL Workbench, sql_alchemy)
-> TODO: how to setup a docker container
+>TODO: other environments to be described later (e.g. MySQL Workbench, sql_alchemy)
+
+## Step 0 | Set up the Docker container
+
+Skip this step if you already have a running SQL Server container.
+
+**First start** (PowerShell):
+
+```powershell
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>" `
+  -p 1433:1433 --name sqlserver `
+  -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
+**Next time**, start the existing container:
+
+```powershell
+docker start sqlserver
+```
+
+**Check that it is running:**
+
+```powershell
+docker ps --filter "name=sqlserver"
+```
+
+**Connect from your SQL client:**
+
+| Parameter | Value |
+|---|---|
+| **Host** | `localhost` |
+| **Port** | `1433` (the left side of the `-p 1433:1433` mapping) |
+| **Authentication** | SQL Server Authentication |
+| **Login** | `sa` |
+| **Password** | the one set in `MSSQL_SA_PASSWORD` |
+
+> Some clients (e.g. SSMS) take host and port in a single field: `localhost,1433` (comma, not a colon). Others (e.g. Azure Data Studio, VS Code, DBeaver) have separate fields.
+> If the client reports a certificate error, enable **Trust server certificate**. The container uses a self-signed certificate.
 
 #
 <br>
@@ -60,7 +96,30 @@ This markdown file depicts the steps necessary to obtain the source dataset (mor
 - Copy the CSV files into a folder in the container.
 - Check that the SQL Server process has permission to read them.
 
->TODO: add exact commands once the scripts are ready
+Set `$src` to your local folder with the CSV files and run in PowerShell:
+
+```powershell
+$src   = "C:\path\to\csv\folder"
+$dest  = "/var/opt/mssql/data"
+$files = "transaction_data","campaign_table","hh_demographic","campaign_desc",
+         "coupon_redempt","product","coupon","causal_data"
+
+# 1. copy the files into the container
+
+foreach ($f in $files) {
+    docker cp "$src\$f.csv" "sqlserver:$dest/$f.csv"
+}
+
+# 2. give the SQL Server process read access
+
+docker exec -u root sqlserver sh -c "chmod 644 $dest/*.csv"
+
+# 3. check that the files are in the container
+
+docker exec sqlserver sh -c "ls -lh $dest/*.csv"
+```
+
+No container restart is needed after `docker cp`. The path used later in `BULK INSERT` is the path **inside the container**, i.e. `/var/opt/mssql/data/<file>.csv`.
 
 <br>
 
