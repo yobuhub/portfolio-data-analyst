@@ -9,3 +9,10 @@
 | **product_id** | 92,339 | unique identifier of each product |
 | **store_id** | 582 | unique identifier of each store |
 
+#### Time dimensions
+
+| Field | Unique values | Description |
+|---|---|---|
+| **day** | 2,500 | unique identifier of each household |
+| **week_no** | 276,484 | unique identifier of each purchase occasion |
+| **trans_time** | 92,339 | unique identifier of each product |

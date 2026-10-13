@@ -1,0 +1,2 @@
+﻿household_key_min;household_key_max;basket_id_min;basket_id_max;product_id_min;product_id_max;store_id_min;store_id_max;day_min;day_max;week_no_min;week_no_max;trans_time_min;trans_time_max;quantity_min;quantity_max;sales_value_min;sales_value_max;retail_disc_min;retail_disc_max;coupon_disc_min;coupon_disc_max;coupon_match_disc_min;coupon_match_disc_max
+1;999;26984851472;42305362535;1000002;999992;1;984;1;99;1;99;0000;2359;0;9997;0;99.99;-0.01;6.938894E-18;-0.08;0;-0.01;0
