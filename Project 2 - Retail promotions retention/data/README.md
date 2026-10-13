@@ -1,0 +1,1 @@
+TODO: dlaczego dane są niedostępne + link
